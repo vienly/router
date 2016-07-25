@@ -4,13 +4,16 @@
 ```npm i --S vien-simple-router```
 
 # Instantiate an http server
-```const http = require('http')```
+```javascript
+const http = require('http')```
 
 # Instantiate the router
-```const Router = require('vien-simple-router')
+```javascript
+const Router = require('vien-simple-router')```
 
 # Define the routes
-```router.get('/hello', (req, res) => {
+```javascript
+router.get('/hello', (req, res) => {
   res.writeHead(200, {
     'Content-Type': 'application/json'
   });
@@ -19,4 +22,5 @@
 });```
 
 # Tell the server to listen to a specific port
-```http.createServer(router.route()).listen(port)```
+```javascript
+http.createServer(router.route()).listen(port)```
