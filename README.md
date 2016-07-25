@@ -5,11 +5,13 @@
 
 # Instantiate an http server
 ```javascript
-const http = require('http')```
+const http = require('http')
+```
 
 # Instantiate the router
 ```javascript
-const Router = require('vien-simple-router')```
+const Router = require('vien-simple-router')
+```
 
 # Define the routes
 ```javascript
@@ -19,8 +21,10 @@ router.get('/hello', (req, res) => {
   });
   res.write('{"msg": "hello world"}');
   res.end();
-});```
+});
+```
 
 # Tell the server to listen to a specific port
 ```javascript
-http.createServer(router.route()).listen(port)```
+http.createServer(router.route()).listen(port)
+```
