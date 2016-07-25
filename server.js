@@ -1,6 +1,8 @@
 'use strict';
 
 const http = require('http');
+const port = process.env.PORT || 3000;
+
 const Router = require('./lib/router');
 
 let router = new Router('/api');
@@ -13,4 +15,5 @@ router.get('/hello', (req, res) => {
   res.end();
 });
 
-http.createServer(router.route()).listen(3000, () => console.log('server up'));
+
+http.createServer(router.route()).listen(port, () => console.log(`server up on port ${port}`));
