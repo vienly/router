@@ -5,14 +5,19 @@
 npm i --S vien-simple-router
 ```
 
-### Instantiate an http server
+### Require in the http module
 ```javascript
 const http = require('http')
 ```
 
-### Instantiate the router
+### Require the router module
 ```javascript
 const Router = require('vien-simple-router')
+```
+
+### Construct a new Router object with a root path
+```javascript
+let router = new Router('/api');
 ```
 
 ### Define the routes
@@ -26,7 +31,7 @@ router.get('/hello', (req, res) => {
 });
 ```
 
-### Tell the server to listen to a specific port
+### Start and tell the server to listen to a specific port
 ```javascript
 http.createServer(router.route()).listen(port)
 ```
