@@ -1,4 +1,4 @@
-![cf](https://i.imgur.com/7v5ASc8.png) ##My Simple Router (as an exercise, don't actually use it)
+#My Simple Router (as an exercise, don't actually use it)
 
 ### Install the npm package from terminal
 ```
