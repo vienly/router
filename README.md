@@ -1,19 +1,21 @@
-![cf](https://i.imgur.com/7v5ASc8.png) My Simple Router (as an exercise, don't actually use it)
+![cf](https://i.imgur.com/7v5ASc8.png) ##My Simple Router (as an exercise, don't actually use it)
 
-# Install the npm package from terminal
-```npm i --S vien-simple-router```
+### Install the npm package from terminal
+```
+npm i --S vien-simple-router
+```
 
-# Instantiate an http server
+### Instantiate an http server
 ```javascript
 const http = require('http')
 ```
 
-# Instantiate the router
+### Instantiate the router
 ```javascript
 const Router = require('vien-simple-router')
 ```
 
-# Define the routes
+### Define the routes
 ```javascript
 router.get('/hello', (req, res) => {
   res.writeHead(200, {
@@ -24,7 +26,7 @@ router.get('/hello', (req, res) => {
 });
 ```
 
-# Tell the server to listen to a specific port
+### Tell the server to listen to a specific port
 ```javascript
 http.createServer(router.route()).listen(port)
 ```
