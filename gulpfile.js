@@ -53,7 +53,7 @@ gulp.task('lint', () => {
 
 gulp.task('test', () => {
   return gulp.src(testFiles)
-  .pipe(mocha({reporter: 'spec'}));
+  .pipe(mocha({reporter: 'nyan'}));
 });
 
 gulp.task('watch', () => {
